@@ -9,3 +9,10 @@ edition = "2021"
 foundry-binder = { path = "../../foundry/binder" }
 
 [dependencies]
+ethers-core = { git = "https://github.com/gakonst/ethers-rs", default-features = false }
+ethers-providers = { git = "https://github.com/gakonst/ethers-rs", default-features = false }
+ethers-contract = { git = "https://github.com/gakonst/ethers-rs", default-features = false, features = ["abigen"] }
+foundry-common = { path = "../../foundry/common" }
+config = "0.13.1"
+serde = "1.0.8"
+serde_derive = "1.0.8"

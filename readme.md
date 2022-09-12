@@ -21,6 +21,8 @@ Then clone adjacent repos (this is because they're relatively referenced for eas
 
 Add rust-analyser to vscode
 
+    rustup component add rustfmt
+
 
 # run
 
@@ -35,4 +37,4 @@ Add rust-analyser to vscode
 Foundry likes submodules with `forge install ...` so we submoduled it in `contracts` dir to keep this feature, so you need to be aware of some quirks https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
     git submodule add https://github.com/Vaultemore/contracts.git
-
+    git submodule add git@github.com:Vaultemore/vaultemore.git

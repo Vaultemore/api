@@ -1,0 +1,2 @@
+rpc_url = "http://localhost:8545"   
+registry_address = "0x3fdc08d815cc4ed3b7f69ee246716f2c8bcd6b07"
