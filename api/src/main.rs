@@ -24,9 +24,9 @@ fn main() {
 
     println!("{:?}", &settings);
 
-    let client = Arc::new(Provider::<Http>::try_from(s.rpc_url).unwrap());
-    let a: Address = settings.registry_address.parse().unwrap();
-    let t = Registry::new(a, client);
-    let all_vaults = t.get_all_va_vaults();
+    let client = Arc::new(Provider::<Http>::try_from(settings.rpc_url).unwrap());
+    let address: Address = settings.registry_address.parse().unwrap();
+    let registry = Registry::new(address, client);
+    let all_vaults = registry.get_all_va_vaults();
     println!("{:?}", all_vaults);
 }
